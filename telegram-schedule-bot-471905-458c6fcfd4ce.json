@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "telegram-schedule-bot-471905",
+  "private_key_id": "458c6fcfd4ceeebf078c9df512d196acfc0f1fb6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCiak+T10t5LXhA\ncBuMS6mVHO/+CTkIgV1odIXhDStTYvtYjYlm8o6mfIWhBYNPxLKyCIMYHa/O4zR5\nHg6/Zd2yX94/RV4r91vHkbjwerH3CrUY5+YSPk4LGzJrp2YNd1WtCAEmNBzthNoH\nFPk/h4CT5zbVDSKNItNB+NZ2mNW4sYIooD8YqmkAqUg5hyZ9Zahg2/qTWoPOG9aM\nQAUDW2NcwJuZm4VCA5Wuspn+l1+VIWnNShTGrDhh50NgCoVva40zVEyyf8AkGnjh\nZix9aitNqD/aQNqWXuH10sQ5DLGbJ/R56joSV/eSsUEyY0L4z9eX94R/BFscUMLD\nNk4hezYbAgMBAAECggEAF6bzv8vyqcr9YCTzXhMGtzhnms8tBxgPyk5t0MBiNtqL\nT/IMuHlKXOR1cWWkIdG7VEH5FWH9YFumIJ1H+IeVKYzciMpJVI3JR97o19yGXjuo\n89+RmcaJBwUG6raOHhfq2i/4OuAL9msKdU2QnrfU+bUKPyySg4s2yLy8PrkzJpo3\nmjGKGPfGV92nb3fzo8fFP8o/HrjaAw82cTVLp2lT1aDyBkTFFznPLepMoWJb4qc1\noHsVqHJxImYxL+K9PVttEI1JBt0Fqamt5h17vHTEm53a5UInVZhC/yM0hQwyEJqQ\n7ocREyxaLj6w7CfVtIUNGgH60Q5z7GNk2Nc05tiJQQKBgQDaeVteBazBzaePK794\nnd0OjbXFe897s8Ojvs+aVcOJHr3t/Es5LUPicjJeUVKmBLLAaAeB5fmcMlWS+539\nhJQucER+A5x0gXvcVrWT97x1VynaaQI4EUc4r657cgIWI4Y5b+VTQY9TwDrcHjiQ\nwZzSE5vvWbDC8sKIs8qHiTe21wKBgQC+T/Zwx2gbFbdH1ICRcqXBv9mhN4RcHYfL\nylWtgJx8fx25pwCYlKvJWJJnkWZF+6RM6u1u8oFtfbI1s4AioW9yLrhty0PzsMzC\nUHJRA2lxtukVv27LFU3vdZz/YfPilLDsyyVQi8GhLWxU6JXwVBgnqUqAP+aqiloM\nq1DMcNlGXQKBgDya1aGraVUJu6WXuTG4eQ4EeZwi0Fe8clUGJYjmqatr/7v49NUT\nnXU/wIExhf/P5dZCBXMfXLLbs6lma1lcYc7QDe/3CHu5P6bL1usJGhpi55VS8+6h\nvGQZOAm+gp2plR5xz+fck+njtXBCYeamDt6n2eX3t3Uc6qIJXfFjOzVZAoGADYX/\nHBp/YlVTtc366Nr9vlvUqikYxbbvfGK/XdnixNH/mb6tQyplXqRlmuhxHQ35qeGT\nx6uB2Pbyn/BGba+NDM8XGe40wO9STYiL5wfYCVWXEI2O4O19oUN5SYh7XSF1xQ3W\nc/fKZZqltQ7mALLpGIBmI+Dmkj3MklPmJPDr750CgYEA1CDI6jMm+gDbEk9e+7CS\nRauJ2wXALDyDqs8bbWEzrnb8ihUW5lUxr6OD8p0nFZTK1Zdj49KjXBMjVV9vV282\n0qo/h5IT+ovRxghqVTWihl3HG+PS0N4WDVdX1mt7ZH4d2Tq9exNemkyudfO436PU\nnuxXt64m4/N0eqQRJrUt0io=\n-----END PRIVATE KEY-----\n",
+  "client_email": "telegram-schedule-bot@telegram-schedule-bot-471905.iam.gserviceaccount.com",
+  "client_id": "100124168317837231304",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/telegram-schedule-bot%40telegram-schedule-bot-471905.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
