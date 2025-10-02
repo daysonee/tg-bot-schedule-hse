@@ -105,29 +105,36 @@ print(time)
 #надо не забыть про орг и историю, как-то сплитануть, т.к. раньше было орг сейчас история.
 #дальше что? этой паре/парам поставить в соответствие время проведения, всем парам в список засунуть день недели.
 
-if "------------------------------" in disciplines[0][0]:
-    upper_week_discipline, lower_week_discipline = disciplines[0][0].replace("\n", "").split("------------------------------")
+if "------------------------------" in disciplines[2][0]: #может не быть пары на верхней или нижней неделе, надо не забыть проверить длину строки
+    upper_week_discipline, lower_week_discipline = disciplines[2][0].replace("\n", "").split("------------------------------")
     print(upper_week_discipline)
     print(lower_week_discipline)
-    if "----" in auditories[0][0]:
-        upper_week_auditories, lower_week_auditories = auditories[0][0].replace("\n", "").split("----")
-        print(upper_week_auditories)
-        print(lower_week_auditories)
+    if "----" in auditories[2][0]: #первый индекс везде поменять на i в цикле
+        upper_week_auditorie, lower_week_auditorie = auditories[2][0].replace("\n", "").split("----")
+        print(upper_week_auditorie)
+        print(lower_week_auditorie)
     else:
-        upper_week_auditories = auditories[0][0].replace("\n", "")
-        lower_week_auditories = auditories[0][0].replace("\n", "")
-        print(upper_week_auditories)
-        print(lower_week_auditories)
-    if "----" in building[0][0]:
-        upper_week_building, lower_week_building = building[0][0].replace("\n", "").split("----")
+        upper_week_auditorie = auditories[2][0].replace("\n", "")
+        lower_week_auditorie = auditories[2][0].replace("\n", "")
+        print(upper_week_auditorie)
+        print(lower_week_auditorie)
+    if "----" in building[2][0]:
+        upper_week_building, lower_week_building = building[2][0].replace("\n", "").split("----")
         print(upper_week_building)
         print(lower_week_building)
     else:
-        upper_week_building = building[0][0].replace("\n", "")
-        lower_week_building = building[0][0].replace("\n", "")
+        upper_week_building = building[2][0].replace("\n", "")
+        lower_week_building = building[2][0].replace("\n", "")
         print(upper_week_building)
         print(lower_week_building)
-    upper_week_pair = [upper_week_discipline, upper_week_auditories, upper_week_building, time[0][0]]
-    lower_week_pair = [lower_week_discipline, lower_week_auditories, lower_week_building, time[0][0]]
+    upper_week_pair = [upper_week_discipline, upper_week_auditorie, upper_week_building, time[2][0], day_of_week]
+    lower_week_pair = [lower_week_discipline, lower_week_auditorie, lower_week_building, time[2][0], day_of_week]
     print(upper_week_pair)
     print(lower_week_pair)
+else:
+    discipline = disciplines[0][0].replace("\n", "")
+    auditorie = auditories[0][0].replace("\n", "")
+    building = building[0][0].replace("\n", "")
+    pair = [discipline, auditories, building, time[2][0], day_of_week]
+#    if "Основы российской государственности" in discipline and "История России" in discipline:
+
