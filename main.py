@@ -244,7 +244,7 @@ def get_schedule():
             for d in dates:
                 add_schedule_entry(subject, teacher, time, classroom, building, d, type)
 
-sch.every(1).minute.do(partial(get_schedule))
+sch.every(12).hours.do(partial(get_schedule))
 while True:
     sch.run_pending()
     time.sleep(10)
