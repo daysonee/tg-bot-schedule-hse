@@ -19,3 +19,4 @@ rsa==4.9.1
 sampleproject @ git+https://github.com/pypa/sampleproject.git@621e4974ca25ce531773def586ba3ed8e736b3fc
 six==1.17.0
 urllib3==2.5.0
+schedule==1.2.2
