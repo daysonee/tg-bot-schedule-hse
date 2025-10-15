@@ -15,7 +15,8 @@ def init_db():
             classroom TEXT,
             building TEXT,
             date TEXT,
-            type TEXT
+            type TEXT,
+            cnt INTEGER
         )
     """)
     conn.commit()
@@ -29,19 +30,19 @@ def clear_schedule():
         conn.commit()
 
 
-def add_schedule_entry(subject, teacher, time, classroom, building, date, type):
+def add_schedule_entry(subject, teacher, time, classroom, building, date, type, cnt):
     #Добавляет одну пару
     with sqlite3.connect(DB_NAME) as conn:
         conn.execute("""
-            INSERT INTO schedule (subject, teacher, time, classroom, building, date, type)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
-        """, (subject, teacher, time, classroom, building, date, type))
+            INSERT INTO schedule (subject, teacher, time, classroom, building, date, type, cnt)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        """, (subject, teacher, time, classroom, building, date, type, cnt))
         conn.commit()
 
 
-def get_schedule_for_date(date):
+def get_schedule_for_date(date, cnt):
     #Получить расписание на конкретную дату (формат 02.09)
     with sqlite3.connect(DB_NAME) as conn:
         cur = conn.cursor()
-        cur.execute("SELECT subject, teacher, time, classroom, building, type FROM schedule WHERE date = ?", (date,))
+        cur.execute("SELECT subject, teacher, time, classroom, building, type FROM schedule WHERE date = ?, cnt = ?", (date, cnt))
         return cur.fetchall()
