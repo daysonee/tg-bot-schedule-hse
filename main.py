@@ -9,7 +9,7 @@ init_db()
 
 
 creds = Credentials.from_service_account_file(
-    "telegram-schedule-bot-471905-0bd9c00479db.json",
+    "telegram-schedule-bot-471905-f38e9f2b653f.json",
     scopes=["https://www.googleapis.com/auth/spreadsheets.readonly"]
 )
 
@@ -209,8 +209,8 @@ def get_schedule():
                 #        else:
                 #            upper_week_building = []
                 #            lower_week_building = []
-                        upper_week_pair = [upper_week_discipline, upper_week_auditorie, upper_week_building, time[i][0], day_of_week]
-                        lower_week_pair = [lower_week_discipline, lower_week_auditorie, lower_week_building, time[i][0], day_of_week]
+                        upper_week_pair = [upper_week_discipline, upper_week_auditorie, upper_week_building, time[i][0].replace(" ", ""), day_of_week]
+                        lower_week_pair = [lower_week_discipline, lower_week_auditorie, lower_week_building, time[i][0].replace(" ", ""), day_of_week]
                 #       print("верхняя неделя",upper_week_pair)
                 #       print("нижняя неделя", lower_week_pair)
                         pair = [upper_week_pair, lower_week_pair]
@@ -228,7 +228,7 @@ def get_schedule():
                         if "Основы российской государственности" in discipline and "История России" in discipline:
                             discipline = discipline.replace("М_ОРГ_Г_958391_162", "М_ОРГ_Г_958391_168").replace("М_ОРГ_Г_958391_163", "М_ОРГ_Г_958391_168").replace("М_ОРГ_Г_958391_164", "М_ОРГ_Г_958391_168").replace("М_ОРГ_Г_958391_165", "М_ОРГ_Г_958391_168").replace("М_ОРГ_Г_958391_166", "М_ОРГ_Г_958391_168").replace("М_ОРГ_Г_958391_167", "М_ОРГ_Г_958391_168")
                             a, discipline = discipline.split("М_ОРГ_Г_958391_168")
-                        pair = [discipline, auditorie, building, time[i][0], day_of_week]
+                        pair = [discipline, auditorie, building, time[i][0].replace(" ", ""), day_of_week]
                         print("обычная неделя", pair)
                     print(pair)
                     if len(pair)==2:
@@ -264,7 +264,7 @@ def get_schedule():
                 for d in dates:
                     add_schedule_entry(subject, teacher, time, classroom, building, d, type, cnt)
 
-#sch.every(60).seconds.do(partial(get_schedule)) #раскомнетировать
+#sch.every(12).hours.do(partial(get_schedule)) #раскоментировать
 #while True:
 #    sch.run_pending()
 #    time.sleep(10)
